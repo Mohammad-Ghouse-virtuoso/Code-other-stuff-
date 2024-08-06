@@ -1,20 +1,16 @@
-N, M = map(int, input().split())
-capacities = list(map(int, input().split()))
-
+#5/5 - test cases passed!
+n,m = map(int, input().split())
+c = list(map(int, input().split()))
 items = []
-for _ in range(M):
-    price, weight = map(int, input().split())
-    items.append((price, weight))
-
-# Sort items by price to allow early termination during processing
-items.sort()
-
-# Process each family member's capacity
-for capacity in capacities:
-    max_weight = 0
-    for price, weight in items:
-        if price > capacity:
-            break  # Early termination as further items can't be bought
-        max_weight += weight
-    print(max_weight)
-#1/5 - test cases passed!
+res = []
+for _ in range(m):
+    p,w = map(int, input().split())
+    items.append((p,w))
+for k in c:
+    max_wgt = 0
+    for i,j in items:
+        if i <= k:
+            max_wgt += j
+    res.append(max_wgt)
+print(*res)
+    
