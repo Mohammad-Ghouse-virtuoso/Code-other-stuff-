@@ -1,0 +1,13 @@
+(Accenture, Aug 2024)
+Q. You are provided with a string which has a sequence of 1's and 0's. 
+This sequence is the encoded version of a engliish word. 
+You are supposed to write a program to decode the provided string and find the original word. 
+Each Alphabet is represented by a sequence of 1s.
+A:1
+B:11
+C:111
+.....
+And so on upto Z having 26 1s.
+The sequence of 1s in the encoded form are separated by single 0 
+which helps to distinguish between 2 letters. 
+Note: Inout String will always be in uppercase.
