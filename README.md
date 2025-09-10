@@ -1,3 +1,3 @@
-read me file,
+read me file
 accenture coding questions
 ..
