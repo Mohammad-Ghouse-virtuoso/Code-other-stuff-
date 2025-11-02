@@ -1,2 +1,2 @@
-iread me file,
+read me file,
 accenture coding question
